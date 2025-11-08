@@ -1,0 +1,23 @@
+/* style.css (kept original look) */
+*{box-sizing:border-box;transition:all .5s ease;}
+body{
+  margin:0;
+  font-family:"Poppins",system-ui;
+  background:#0f172a;
+  color:#e2e8f0;
+  display:flex;flex-direction:column;
+  height:100vh;overflow:hidden;position:relative;
+}
+header{
+  background:#1e293b;padding:10px 16px;border-bottom:1px solid #475569;
+  display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 0 15px rgba(30,41,59,0.5);position:relative;z-index:9999;
+}
+.chat-box{flex:1;overflow-y:auto;padding:16px;padding-bottom:120px;display:flex;flex-direction:column;gap:12px;scroll-behavior:smooth;z-index:2;}
+.input-area{position:fixed;bottom:0;left:0;right:0;background:#1e293b;padding:10px;display:flex;align-items:center;gap:10px;border-top:1px solid #475569;z-index:9999;box-sizing:border-box;padding-bottom:max(10px, env(safe-area-inset-bottom));}
+.user-bubble{background:#374151;border:1px solid #4b5563;color:#f8fafc;}
+.bubble{padding:10px 14px;border-radius:14px;line-height:1.5;word-wrap:break-word;}
+.avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid #94a3b8;flex-shrink:0;}
+button,.upload-label{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;transition:.3s;}
+.upload-label{background:#475569;color:#f8fafc;}
+button{background:#94a3b8;color:#1e293b;font-size:18px;}
