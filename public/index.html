@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SatriaCb Ai</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="particleCanvas"></canvas>
+<div id="transitionLayer"></div>
+<audio id="poofSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_53b85de9d1.mp3?filename=magical-woosh-140894.mp3"></audio>
+
+<header>
+  <div class="left" style="display:flex;align-items:center;gap:10px;">
+    <img id="avatar" src="https://files.catbox.moe/xnvo8h.jpg" alt="avatar">
+    <h1 id="aiName">SatriaCb AI Chat</h1>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div id="status">Online</div>
+    <div id="menuBtn">☰</div>
+  </div>
+  <div id="menuPopup">
+    <div class="option" data-ai="hutao"> SatriaCb AI</div>
+    <div class="menu-divider"></div>
+    <div class="option" id="showStats">📊 Statistik Chat</div>
+    <div class="option" id="showHistory">💾 Riwayat Chat</div>
+    <div class="menu-divider"></div>
+    <div class="option" id="showFeedback">📑 Beri Feedback</div>
+  </div>
+</header>
+
+<div id="chatBox" class="chat-box"></div>
+
+<div class="input-area">
+  <div id="previewBox">
+    <div id="previewTop">
+      <span>📎 File siap diupload 💾</span>
+      <button id="removeBtn">Hapus</button>
+    </div>
+    <img id="previewImg" src="" alt="">
+  </div>
+  <label for="imgInput" class="upload-label" title="Kirim gambar">＋</label>
+  <input id="imgInput" type="file" accept="image/*" hidden>
+  <input id="userInput" placeholder="Ketik pesanmu..." autocomplete="off">
+  <button id="sendBtn">⮕</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
